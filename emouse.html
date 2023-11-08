@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos.js</title>
+</head>
+<body>
+  <h1>Diferentes eventos con el mouse</h1>
+  <ul>
+    <li><strong>click</strong>cuando hacemos click</li>
+    <li><strong>dblclick</strong>cuando hacemos doble click</li>
+    <li><strong>mouseenter</strong>cuando entramos a la zona del evento</li>
+    <li><strong>mouseleave</strong>cuando salimos de la zona del evento</li>
+    <li><strong>mousedown</strong>cuando pulsamos y no soltamos el btn izquierdo</li>
+    <li><strong>mouseup</strong>cuando soltamos el btn izquierdo</li>
+    <li><strong>mousemove</strong>cuando movemos el mouse</li>
+  </ul>
+  <div id="element" style="background-color: red; width:100px; height: 100px;"></div>
+  <script>
+    const div = document.querySelector('#element');
+    div.addEventListener('mouseenter', disparaFuncion);
+    function disparaFuncion () {
+      div.style.background = 'blue';
+      alert('se disparo el evento.');
+    }
+  </script>
+</body>
+</html>

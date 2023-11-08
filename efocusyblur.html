@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos.js</title>
+</head>
+<body>
+  <h1>focus y blur</h1>
+  <form action="" id="form">
+    <div><input type="text" name="" id="curso">curso</div>
+    <div><input type="text" name="" id="duracion">duracion</div>
+    <div><input type="checkbox" name="" id="chk">cambiar</div>
+    <button type="submit">enviar</button>
+  </form>
+  <script>
+    const form = document.querySelector('#curso');
+    form.addEventListener('focus', (e) => {
+      console.log(e);
+      console.log(e.target);
+      e.target.style.background = "tomato";
+    })
+    form.addEventListener('blur', (e) => {
+      e.target.style.background = "yellow";
+    })
+
+    let input = document.querySelector('#duracion');
+    input.addEventListener('focus', (e) => {
+      console.log(e);
+      console.log(e.target);
+      e.target.style.background = "tomato";
+    })
+    input.addEventListener('blur', (e) => {
+      e.target.style.background = "yellow";
+    })
+  </script>
+</body>
+</html>

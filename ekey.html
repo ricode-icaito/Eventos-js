@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos.js</title>
+</head>
+<body>
+  <h1>Diferentes eventos del teclado</h1>
+  <ul>
+    <li><strong>keydown</strong>al pulsar la tecla</li>
+    <li><strong>keyup</strong>al soltar la tecla</li>
+    <li><strong>keypress</strong>al mantener presionada una tecla</li>
+  </ul>
+    <input type="text" name="entrada" id="entrada">
+    <script>
+      const entrada = document.querySelector('#entrada');
+      entrada.addEventListener('keydown', () => {
+        alert('pulsaste una tecla.');
+      })
+    </script>
+</body>
+</html>

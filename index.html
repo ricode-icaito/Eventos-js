@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Pagina WEB, HTML5, CSS3 Y JAVASCRIPT">
+  <meta name="description" content="Lenguaje de programacion javascript">
+  <meta author="Ricardo Diosdado">
+  <title>EventosJS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <script src="js/script.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+  <h1>Events.js-a programar</h1>
+  <p>Un evento es cualquier cosa que sucede en nuestra pagina-documento...</p>
+  <ul>
+    <li>El documento a cargado</li>
+    <li>El usuario presiono una tecla</li>
+    <li>El usuario movio el raton</li>
+    <li>la ventana cambio de tamaño</li>
+    <li>El usuario hizo un click</li>
+    <li>El usuario paso el puntero del mouse sobre...</li>
+    <li>El usuario cerro la ventana</li>
+  </ul>
+  <button id="btn">Hacer algo</button>
+<script>
+  const h1 = document.querySelector('h1');
+  h1.addEventListener('dblclick', () => {
+    console.log("Hiciste click en el h1")
+    alert("Hiciste click en el h1-titulo")
+  })
+  const btn = document.querySelector('#btn');
+  btn.addEventListener('click', () => {
+    console.log("Tocaste el btn")
+    alert("Tocaste el btn-boton")
+  })
+  const p = document.querySelector('p');
+  p.addEventListener('click', () => {
+    console.log("Tocaste el p")
+    alert("Tocaste el p-parrafo")
+  })
+  const ul = document.querySelector('ul');
+  ul.addEventListener('click', () => {
+    console.log("Tocaste el ul")
+    alert("Tocaste el ul-eventos")
+  })
+</script>
+</body>
+</html>
